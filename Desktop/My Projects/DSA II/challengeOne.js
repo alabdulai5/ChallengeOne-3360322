@@ -44,5 +44,11 @@ class Trie {
     }
 }
 
-// Export the Trie class for testing
-module.exports = Trie;
+// Test cases
+const trie = new Trie();
+trie.insert("apple");
+console.log(trie.search("apple"));  
+console.log(trie.search("app"));     
+console.log(trie.startsWith("app"));
+trie.insert("app");
+console.log(trie.search("app"));     
